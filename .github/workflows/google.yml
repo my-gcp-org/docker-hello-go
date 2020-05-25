@@ -63,6 +63,10 @@ jobs:
         # Set up docker to authenticate
         # via gcloud command-line tool.
         gcloud auth configure-docker
+
+    - name: sentry-install
+      run: |
+        go get github.com/getsentry/sentry-go
       
     # Build the Docker image
     - name: Build
