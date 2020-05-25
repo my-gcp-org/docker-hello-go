@@ -36,7 +36,7 @@ env:
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GITHUB_SHA: ${{ github.sha }}
   GKE_REGION: ${{ secrets.GKE_REGION }}
-  GKE_CLUSTER: {{ secrets.GKE_CLUSTER }}
+  GKE_CLUSTER: ${{ secrets.GKE_CLUSTER }}
   IMAGE: docker-hello-go
   REGISTRY_HOSTNAME: gcr.io
   DEPLOYMENT_NAME: hello-app-deployment
