@@ -24,7 +24,7 @@ env:
   IMAGE: docker-hello-go
   REGISTRY_HOSTNAME: gcr.io
   DEPLOYMENT_NAME: hello-deployment
-  GKE_PROJECT: open-shift-278203
+  #GKE_PROJECT: open-shift-278203
 
 jobs:
   setup-build-publish-deploy:
