@@ -1,5 +1,10 @@
 commonLabels:
-     app: hello
-   resources:
-   - deployment.yaml
-   - service.yaml
+  app: hello
+resources:
+- deployment.yaml
+- service.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- digest: sha256:472f99b5d0bb9dacd3bbce562383548a35a5c3799fdcbbc7dc5257c8ca06fe8e
+  name: gcr.io/open-shift-278203/docker-hello-go

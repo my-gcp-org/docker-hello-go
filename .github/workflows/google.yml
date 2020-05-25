@@ -39,7 +39,7 @@ env:
   GKE_CLUSTER: open-shift-278203-gke
   IMAGE: docker-hello-go
   REGISTRY_HOSTNAME: gcr.io
-  DEPLOYMENT_NAME: hello-deployment
+  DEPLOYMENT_NAME: hello-app-deployment
   #GKE_PROJECT: open-shift-278203
 
 jobs:
