@@ -35,7 +35,7 @@ env:
   GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GITHUB_SHA: ${{ github.sha }}
-  GKE_REGION: us-central-1
+  GKE_REGION: us-central1
   GKE_CLUSTER: open-shift-278203-gke
   IMAGE: docker-hello-go
   REGISTRY_HOSTNAME: gcr.io
