@@ -5,23 +5,23 @@ import (
         "log"
         "net/http"
 	"os"
-	"time"
-	"github.com/getsentry/sentry-go"
+//	"time"
+//	"github.com/getsentry/sentry-go"
 )
 
 func main() {
 
         // Sentry for Error Tracking
-	err := sentry.Init(sentry.ClientOptions{
-		Dsn: "https://556c91843255483d90b134ef4db2f9b4@o397787.ingest.sentry.io/5252636",
-	})
-	if err != nil {
-		log.Fatalf("sentry.Init: %s", err)
-	}
+//	err := sentry.Init(sentry.ClientOptions{
+//		Dsn: "https://556c91843255483d90b134ef4db2f9b4@o397787.ingest.sentry.io/5252636",
+//	})
+//	if err != nil {
+//		log.Fatalf("sentry.Init: %s", err)
+//	}
 	// Flush buffered events before the program terminates.
-	defer sentry.Flush(2 * time.Second)
+//	defer sentry.Flush(2 * time.Second)
 
-	sentry.CaptureMessage("It works!")
+//	sentry.CaptureMessage("It works!")
 
         // register hello function to handle all requests
         mux := http.NewServeMux()
