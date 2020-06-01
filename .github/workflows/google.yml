@@ -85,6 +85,7 @@ jobs:
     # devsecops step 1
     - name: set up dependency check
       run: |
+        chmod u+x ./dependency-check/bin/dependency-check.sh
         ./dependency-check/bin/dependency-check.sh -h
 
     # Deploy the Docker image to the GKE cluster
