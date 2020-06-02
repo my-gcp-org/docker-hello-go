@@ -86,7 +86,7 @@ jobs:
     - name: set up dependency check
       run: |
         chmod u+x ./dependency-check/bin/dependency-check.sh
-        ./dependency-check/bin/dependency-check.sh -h
+        ./dependency-check/bin/dependency-check.sh -s ../../dependency-check/plugins/*.jar
 
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
